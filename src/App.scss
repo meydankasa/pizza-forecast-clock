@@ -1,0 +1,64 @@
+
+.pizza-meter {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  img { width: 400px; }
+}
+
+.status-information {
+  display: grid;
+  margin-block-start: -2rem;
+  h3{ margin-top:0.3rem; }
+  span{
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+}
+
+.logo-swimm {
+    text-align: start;
+    padding: 0 5px;
+}
+
+.rain-drop {
+  border-radius: 15px;
+  position: absolute;
+  background-color: white;
+}
+
+.red-clock-dial {
+  height: 100%;
+  width: 15px;
+  border-radius: 15px;
+  position: absolute;
+  background-color: rgb(148, 14, 14);
+  bottom: 2px;
+  left: 50%;
+  animation: rotation 5s infinite linear;
+  transform-origin: 50% 100%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(-20deg);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .pizza-meter img{
+      width: 300px;
+  }
+  .logo-swimm img{
+      width: 30px;
+  }
+  .status-information h3 {
+    margin-top:1rem;
+  }
+} 
